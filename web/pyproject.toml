@@ -2,7 +2,7 @@
 name = "electiva2parcial3"
 version = "0.1.0"
 description = ""
-authors = ["Michael David Morantes T. <maickmorantes@gmail.com>"]
+authors = ["Kevin Galindo. <ks2197galom@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
