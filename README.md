@@ -10,13 +10,6 @@ TEAM:
 - Git clone https://github.com/Ksgalo/microservice
 - cd <nombre_carpeta> && docker-compose up -d
 
-# Tests
-
-- cd <nombre_carpeta>
-- cd tests/
-- source env/Scripts/activate
-- pytest -v
-
 # Services
 
 ### MYSQL
