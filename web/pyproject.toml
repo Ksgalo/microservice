@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "electiva2parcial3"
+version = "0.1.0"
+description = ""
+authors = ["Michael David Morantes T. <maickmorantes@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.2.2"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,58 @@
+version: "3.1"
+
+services:
+  database-service:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - app-tier
+    container_name: zz_postgresql
+  faker-service:
+    restart: always
+    build: ./faker
+    volumes:
+      - ./faker:/usr/src/app
+    ports:
+      - 3000:80
+    networks:
+      - app-tier
+    depends_on:
+      - database-service
+    container_name: zz_faker
+  api-service:
+    restart: always
+    build: ./api
+    volumes:
+      - ./api:/usr/src/app
+    ports:
+      - 3001:81
+    networks:
+      - app-tier
+    depends_on:
+      - faker-service
+    container_name: zz_api
+  web-service:
+    restart: always
+    build: ./web
+    ports:
+      - 3002:82
+    volumes:
+      - ./web:/usr/src/app
+    networks:
+      - app-tier
+    container_name: zz_web
+
+networks:
+  app-tier:
+    driver: bridge
+volumes:
+  db-data:
