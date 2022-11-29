@@ -1,6 +1,6 @@
 # Python - Pytest - Flask - Poetry - Postgresql - Docker / Microservicios
 
-Integrantes:
+TEAM:
 
 - Kevin Galindo 
 - Maria Emily parra
