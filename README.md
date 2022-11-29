@@ -12,7 +12,6 @@ TEAM:
 
 # Tests
 
-- _Los test se deben realizar mientras la aplicacion se esta ejecutando en docker_
 - cd <nombre_carpeta>
 - cd tests/
 - source env/Scripts/activate
@@ -20,21 +19,21 @@ TEAM:
 
 # Services
 
-### Postgresql
+### MYSQL
 
-http://localhost:5432
+http://localhost:3306
 
 ### Faker
 
-- Visualizar registros: http://localhost:3000/select
-- Crear registros: http://localhost:3000/insert
-- Eliminar registros: http://localhost:3000/delete
+- Visualizar : http://localhost:3000/select
+- Crear : http://localhost:3000/insert
+- Eliminar : http://localhost:3000/delete
 
 ### API
 
-- Visualizar registros: http://localhost:3001
-- Crear registros: http://localhost:3001/admin/insert
-- Eliminar registros: http://localhost:3001/admin/delete
+- Visualizar : http://localhost:3001
+- Crear : http://localhost:3001/admin/insert
+- Eliminar : http://localhost:3001/admin/delete
 
 ### WEB
 
