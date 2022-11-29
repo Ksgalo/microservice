@@ -2,12 +2,12 @@ version: "3.1"
 
 services:
   database-service:
-    image: postgres
+    image: mysql:5.7
     restart: always
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DB: db
     volumes:
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
       - db-data:/var/lib/postgresql/data
@@ -15,7 +15,7 @@ services:
       - 5432:5432
     networks:
       - app-tier
-    container_name: zz_postgresql
+    container_name: mysql
   faker-service:
     restart: always
     build: ./faker
