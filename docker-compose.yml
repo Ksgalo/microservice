@@ -12,7 +12,7 @@ services:
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
       - db-data:/var/lib/postgresql/data
     ports:
-      - 5432:5432
+      - 3306:3306
     networks:
       - app-tier
     container_name: mysql
