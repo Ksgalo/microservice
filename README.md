@@ -1,4 +1,4 @@
-# Python - Pytest - Flask - Poetry - Postgresql - Docker / Microservicios
+# Microservicios docker compose
 
 TEAM:
 
