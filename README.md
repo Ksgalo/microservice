@@ -2,16 +2,15 @@
 
 Integrantes:
 
-- Michael David Morantes Tintinago
-- Jorge Mesias
+- Kevin Galindo 
+- Maria Emily parra
 
-# Ejecutar el proyecto
+# RUN PROJECT
 
-- Clonar de Github
-- cd <nombre_carpeta>
-- docker-compose up -d --build
+- Git clone https://github.com/Ksgalo/microservice
+- cd <nombre_carpeta> && docker-compose up -d
 
-# Ejecutar tests
+# Tests
 
 - _Los test se deben realizar mientras la aplicacion se esta ejecutando en docker_
 - cd <nombre_carpeta>
@@ -19,7 +18,7 @@ Integrantes:
 - source env/Scripts/activate
 - pytest -v
 
-# Localizaciones de los servicios
+# Services
 
 ### Postgresql
 
